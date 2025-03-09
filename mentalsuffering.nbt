@@ -1,0 +1,10 @@
+unit BMI: Mass / Length^2 = kg / m^2
+
+let tmass = 70
+
+let theight = 4
+
+fn body_mass_index(mass: Mass, height: Length) =
+    mass / height² -> BMI
+
+print(body_mass_index(tmass kg, theight m))
