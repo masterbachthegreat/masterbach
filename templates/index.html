@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Modifier</title>
+</head>
+<body>
+    <h1>Modify the Numbat File</h1>
+    <form method="POST">
+        <label for="pmass">Enter PMass:</label>
+        <input type="text" id="pmass" name="pmass" value="{{ pmass }}" required><br><br>
+
+        <label for="pheight">Enter PHeight:</label>
+        <input type="text" id="pheight" name="pheight" value="{{ pheight }}" required><br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    {% if result %}
+        <h2>Result:</h2>
+        <pre>{{ result }}</pre>
+    {% endif %}
+</body>
+</html>
